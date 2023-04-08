@@ -40,62 +40,63 @@
 
 </head>
 
+
 <body>
     <main class="m-top">
         @include('layouts.navbar')
     </main>
 
     <!--Main layout-->
-    <main style="margin-top: 58px">
+    {{-- <main style="margin-top: 58px"> --}}
+    <div class="container p-2 mt-5">
         <div class="container pt-5 p-5 mt-6">
-
-            <div class="row d-flex">
-                <div class="col-2">
-                    <div class="card justify-content-center">
-                        <div class="card-body">
-                            <i class="fas fa-hamburger"></i> Makanan
+            <div class="container">
+                <div class="row flex-nowrap overflow-auto">
+                    <div class="col-xs-6 col-sm-4 col-md-2 my-1">
+                        <div class="card justify-content-center">
+                            <div class="card-body">
+                                <i class="fas fa-hamburger"></i> Makanan
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-2">
-                    <div class="card justify-content-center">
-                        <div class="card-body">
-                            <i class="fas fa-mug-hot"></i> Minuman
+                    <div class="col-xs-6 col-sm-4 col-md-2 my-1">
+                        <div class="card justify-content-center">
+                            <div class="card-body">
+                                <i class="fas fa-mug-hot"></i> Minuman
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-2">
-                    <div class="card justify-content-center">
-                        <div class="card-body">
-                            <i class="fas fa-user"></i> User
+                    <div class="col-xs-6 col-sm-4 col-md-2 my-1">
+                        <div class="card justify-content-center">
+                            <div class="card-body">
+                                <i class="fas fa-tags"></i> Promo
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-2">
-                    <div class="card justify-content-center">
-                        <div class="card-body">
-                            <i class="fas fa-user"></i> User
+                    <div class="col-xs-6 col-sm-4 col-md-2 my-1">
+                        <div class="card justify-content-center">
+                            <div class="card-body">
+                                <i class="fas fa-shopping-cart"></i> Shopping
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-2">
-                    <div class="card justify-content-center">
-                        <div class="card-body">
-                            <i class="fas fa-user"></i> User
+                    <div class="col-xs-6 col-sm-4 col-md-2 my-1">
+                        <div class="card justify-content-center">
+                            <div class="card-body">
+                                <i class="fas fa-hand-holding-usd"></i> COD
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-2">
-                    <div class="card justify-content-center">
-                        <div class="card-body">
-                            <i class="fas fa-user"></i> User
+                    <div class="col-xs-6 col-sm-4 col-md-2 my-1">
+                        <div class="card justify-content-center">
+                            <div class="card-body">
+                                <i class="fas fa-wallet"></i> E-wallet
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <br>
-
             <div class="card">
                 <div class="card-body">
                     <div class="row">
@@ -127,20 +128,63 @@
                         </div>
                     </div>
                 </div>
-
-                {{-- <div class="col-5">
-                    <img src="{{ asset('img/banner2.png') }}" width="100%" height="50%" alt="haalo">
-                    <img src="{{ asset('img/banner3.png') }}" width="100%" height="50%" alt="haalo">
-                </div> --}}
             </div>
-        </div>
-        </div>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('img/1.jpeg') }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Pilih</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('img/1.jpeg') }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Pilih</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('img/1.jpeg') }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Pilih</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card">
+                            <img src="{{ asset('img/1.jpeg') }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Pilih</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
-        <div class="mt-5">
-            @include('layouts.footer')
-        </div>
-    </main>
+    </div>
+    <div class="mt-5">
+        @include('layouts.footer')
+    </div>
     <!--Main layout-->
     </div>
 

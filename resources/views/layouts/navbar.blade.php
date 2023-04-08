@@ -45,25 +45,21 @@
     }
 </style>
 
-<nav id="sidebarMenu" class="collapse d-lg-block sidebar bg-white">
+
+
+<nav class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling">
     <div class="position-sticky">
         <div class="list-group list-group-flush mx-3 mt-4">
-            <a href="/beranda" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-                <i class="fas fa-user fa-fw me-3"></i><span>Home</span>
-            </a>
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
             <a href="/" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <i class="fas fa-home fa-fw me-3"></i><span>Home</span>
+            </a>
+            <a href="/data" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
                 <i class="fas fa-user fa-fw me-3"></i><span>Data User</span>
             </a>
-            <a href="/" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-                <i class="fas fa-user fa-fw me-3"></i><span>Data User</span>
-            </a>
-            <a href="/" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
-                <i class="fas fa-user fa-fw me-3"></i><span>Data User</span>
-            </a>
-            <form action="{{ route('logout') }}" method="POST">
-                @csrf
-                <button class="form-control btn btn-danger" type="submit"> logout</button></li>
-            </form>
         </div>
     </div>
 
@@ -72,17 +68,17 @@
 <nav id="main-navbar" class="navbar navbar-expand-md navbar-light bg-white fixed-top">
     <!-- Container wrapper -->
     <div class="container">
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#sidebarMenu"
-            aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling">
             <i class="fas fa-bars"></i>
         </button>
-
         <!-- Navbar brand -->
-        <a class="navbar-brand me-2" href="/">
+        {{-- <a class="navbar-brand me-2" href="/">
             <img src="{{ asset('img/logoipsum.svg') }}" height="16" alt="Logo" loading="lazy"
                 style="margin-top: -1px;" />
-        </a>
+        </a> --}}
         <!-- Left links -->
+
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
                 <a class="nav-link fw-bold" href="#">NopalTech</a>
@@ -118,13 +114,13 @@
                     aria-expanded="false">
                     {{ Auth::user()->name }}
                 </button>
-                {{-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="{{ route('profile.edit') }}">Profile</a></li>
-                        <form action="{{ route('logout') }}" method="POST">
-                            @csrf
-                            <li> <button class="dropdown-item" type="submit"> logout</button></li>
-                        </form>
-                    </ul> --}}
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="{{ route('profile.edit') }}">Profile</a></li>
+                    <form action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        <li> <button class="dropdown-item" type="submit"> logout</button></li>
+                    </form>
+                </ul>
             </div>
         </div>
     @endauth

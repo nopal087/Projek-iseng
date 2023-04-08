@@ -46,7 +46,8 @@
     </main>
 
     <!--Main layout-->
-    <main style="margin-top: 58px">
+    {{-- <main style="margin-top: 58px"> --}}
+    <div class="container p-2 mt-5">
         <div class="container pt-5 p-5 mt-6">
             <div class="mb-2">
                 <a href="/tambahdata"><button type="button" class="btn btn-primary" data-mdb-toggle="modal"
@@ -118,9 +119,10 @@
         <div class="mt-5">
             @include('layouts.footer')
         </div>
-    </main>
-    <!--Main layout-->
+        {{-- </main> --}}
+        <!--Main layout-->
     </div>
+
 
 
 

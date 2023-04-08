@@ -16,10 +16,10 @@ use App\Models\Data;
 |
 */
 
+// Route::get('/', function () {
+//     return view('home');
+// });
 Route::get('/', function () {
-    return view('home');
-});
-Route::get('/beranda', function () {
     return view('userhome');
 });
 Route::get('/tambahdata', function () {
@@ -35,7 +35,8 @@ Route::get('/header', function () {
     return view('layouts.header');
 });
 
-Route::get('/', [DataController::class, 'index']);
+
+Route::get('/data', [DataController::class, 'index']);
 Route::get('/home/create', [DataController::class, 'create']);
 Route::post('/home/store', [DataController::class, 'store']);
 Route::get('/editdata/{id}/edit', [DataController::class, 'edit']);
