@@ -12,6 +12,11 @@ class DataController extends Controller
         $data = Data::all();
         return view('/home', compact('data'));
     }
+    public function home(Request $request)
+    {
+        // $data = Data::all();
+        return view('/userhome');
+    }
 
     public function create()
     {

@@ -40,6 +40,21 @@
 
 </head>
 
+<style>
+    .carousel-item img {
+        /* max-height: 250px; */
+        width: 1208px;
+        height: 302px;
+        object-fit: contain;
+    }
+
+    @media (max-width: 767px) {
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
 
 <body>
     <main class="m-top">
@@ -51,6 +66,7 @@
     <div class="container p-2 mt-5">
         <div class="container pt-5 p-5 mt-6">
             <div class="container">
+                <h3>Kategori</h3>
                 <div class="row flex-nowrap overflow-auto">
                     <div class="col-xs-6 col-sm-4 col-md-2 my-1">
                         <div class="card justify-content-center">
@@ -100,7 +116,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="row">
-                        <div id="carouselExample" class="carousel slide">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="col">
                                     <div class="carousel-item active">
@@ -114,12 +130,12 @@
                                     </div>
 
                                     <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carouselExample" data-bs-slide="prev">
+                                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
                                     <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselExample" data-bs-slide="next">
+                                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
@@ -131,6 +147,7 @@
             </div>
             <br>
             <div class="container">
+                <h3>Rekomendasi</h3>
                 <div class="row">
                     <div class="col-md-6 col-lg-3 mb-4">
                         <div class="card">

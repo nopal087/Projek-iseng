@@ -51,6 +51,7 @@ Route::get('/home', function () {
 })->middleware(['auth', 'verified'])->name('/');
 
 Route::middleware('auth')->group(function () {
+    Route::get('/', [DataController::class, 'home']);
     Route::get('/dashboard', [DataController::class, 'index']);
     Route::get('/home/create', [DataController::class, 'create']);
     Route::post('/home/store', [DataController::class, 'store']);

@@ -83,6 +83,11 @@
             <li class="nav-item">
                 <a class="nav-link fw-bold" href="#">NopalTech</a>
             </li>
+            <div>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="#">Kategori</a>
+                </li>
+            </div>
         </ul>
         <!-- Left links -->
 
