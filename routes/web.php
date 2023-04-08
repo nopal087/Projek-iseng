@@ -34,6 +34,9 @@ Route::get('/footer', function () {
 Route::get('/header', function () {
     return view('layouts.header');
 });
+Route::get('/kategori', function () {
+    return view('kategori');
+});
 
 
 Route::get('/data', [DataController::class, 'index']);

@@ -60,6 +60,25 @@
             <a href="/data" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
                 <i class="fas fa-user fa-fw me-3"></i><span>Data User</span>
             </a>
+
+            <li class="nav-item dropdown list-group-item list-group-item-action py-2 ripple">
+                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                    Kategori</a>
+                <ul class="dropdown-menu">
+                    <div class="conainer">
+                        <div class="card">
+                            <div class="card-body">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </li>
         </div>
     </div>
 
@@ -84,9 +103,8 @@
                 <a class="nav-link fw-bold" href="#">NopalTech</a>
             </li>
             <div>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold" href="#">Kategori</a>
-                </li>
+
+
             </div>
         </ul>
         <!-- Left links -->
