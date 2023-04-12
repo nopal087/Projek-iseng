@@ -18,3 +18,9 @@ module.exports = {
 
     plugins: [require('@tailwindcss/forms')],
 };
+
+// tailwind.config.js
+module.exports = {
+  darkMode: 'media',
+  // ...
+}

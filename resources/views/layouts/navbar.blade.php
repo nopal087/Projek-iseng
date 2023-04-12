@@ -1,4 +1,8 @@
+{{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" /> --}}
+
+
 @vite([])
+
 <style>
     body {
         background-color: #fbfbfb;
@@ -83,6 +87,9 @@
     </div>
 
 </nav>
+
+
+
 <!-- Navbar -->
 <nav id="main-navbar" class="navbar navbar-expand-md navbar-light bg-white fixed-top">
     <!-- Container wrapper -->
@@ -91,23 +98,13 @@
             aria-controls="offcanvasScrolling">
             <i class="fas fa-bars"></i>
         </button>
-        <!-- Navbar brand -->
-        {{-- <a class="navbar-brand me-2" href="/">
-            <img src="{{ asset('img/logoipsum.svg') }}" height="16" alt="Logo" loading="lazy"
-                style="margin-top: -1px;" />
-        </a> --}}
-        <!-- Left links -->
 
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
                 <a class="nav-link fw-bold" href="#">NopalTech</a>
             </li>
-            <div>
-
-
-            </div>
         </ul>
-        <!-- Left links -->
+
 
         @guest
             <div class="d-flex align-items-center">
@@ -131,7 +128,7 @@
         @endguest
         @auth
             <div class="d-flex align-items-center">
-                {{-- <div class="dropdown"> --}}
+
                 <form action=""></form>
                 <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown"
                     aria-expanded="false">
@@ -152,4 +149,6 @@
     </div>
     <!-- Container wrapper -->
 </nav>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
 <!-- Navbar -->

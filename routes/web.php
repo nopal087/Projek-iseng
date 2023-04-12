@@ -37,6 +37,9 @@ Route::get('/header', function () {
 Route::get('/kategori', function () {
     return view('kategori');
 });
+Route::get('/halamanbaru', function () {
+    return view('halaman_baru');
+});
 
 
 Route::get('/data', [DataController::class, 'index']);
